@@ -16,3 +16,4 @@ map <C-l> <C-w>l
 set mouse=a
 set pastetoggle=<F2>
 set colorcolumn=80 textwidth=79
+set scrolloff=5
