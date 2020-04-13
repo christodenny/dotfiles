@@ -16,3 +16,6 @@ if [ ! -f ~/.ssh/id_rsa.pub ]; then
     eval "$(ssh-agent -s)"
     ssh-add ~/.ssh/id_rsa
 fi
+
+echo "Update default editor to vim"
+sudo update-alternatives --config editor
