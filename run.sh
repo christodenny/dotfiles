@@ -4,8 +4,15 @@ echo "Update package cache"
 sudo apt update
 
 echo "Downloading programs"
-sudo apt install vim tmux htop
+sudo apt install vim tmux htop git
 
 echo "Pulling dotfiles"
 wget https://raw.githubusercontent.com/christodenny/dotfiles/master/.vimrc -O ~/.vimrc
 wget https://raw.githubusercontent.com/christodenny/dotfiles/master/.tmux.conf -O ~/.tmux.conf
+
+if [ ! -f ~/.ssh/id_rsa.pub ]; then
+    echo "Generating ssh keys"
+    ssh-keygen -t rsa -b 4096 -C "chris.denny@utexas.edu"
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_rsa
+fi
