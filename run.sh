@@ -4,7 +4,7 @@ echo "Update package cache"
 sudo apt update
 
 echo "Downloading programs"
-sudo apt install vim tmux htop git
+sudo apt install vim tmux htop git gnome-tweak-tool
 
 echo "Pulling dotfiles"
 wget https://raw.githubusercontent.com/christodenny/dotfiles/master/.vimrc -O ~/.vimrc
