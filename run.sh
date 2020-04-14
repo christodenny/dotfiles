@@ -5,6 +5,7 @@ sudo apt update
 
 echo "Downloading programs"
 sudo apt install vim tmux htop git gnome-tweak-tool
+sudo snap install go --classic
 
 echo "Pulling dotfiles"
 wget https://raw.githubusercontent.com/christodenny/dotfiles/master/.vimrc -O ~/.vimrc
