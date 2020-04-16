@@ -4,8 +4,11 @@ echo "Update package cache"
 sudo apt update
 
 echo "Downloading programs"
-sudo apt install vim tmux htop git gnome-tweak-tool
+sudo apt install vim tmux htop git gnome-tweak-tool earlyoom
 sudo snap install go --classic
+
+sudo systemctl enable earlyoom
+sudo systemctl start earlyoom
 
 echo "Pulling dotfiles"
 wget https://raw.githubusercontent.com/christodenny/dotfiles/master/.vimrc -O ~/.vimrc
