@@ -4,7 +4,7 @@ echo "Update package cache"
 sudo apt update
 
 echo "Downloading programs"
-sudo apt install vim tmux htop git gnome-tweak-tool earlyoom
+sudo apt install vim tmux htop git gnome-tweak-tool earlyoom silversearcher-ag
 sudo snap install go --classic
 
 sudo systemctl enable earlyoom
