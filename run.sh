@@ -4,7 +4,7 @@ echo "Update package cache"
 sudo apt update
 
 echo "Downloading programs"
-sudo apt install vim tmux htop git gnome-tweak-tool earlyoom silversearcher-ag
+sudo apt -y --force-yes install vim tmux htop git gnome-tweak-tool earlyoom silversearcher-ag </dev/null
 
 sudo systemctl enable earlyoom
 sudo systemctl start earlyoom
