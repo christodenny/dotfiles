@@ -24,4 +24,4 @@ echo "Setup tmux plugins"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm || true
 
 echo "Update default editor to vim"
-sudo update-alternatives --config editor
+sudo update-alternatives --set editor /usr/bin/vim.basic
