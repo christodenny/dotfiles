@@ -23,3 +23,6 @@ fi
 
 echo "Update default editor to vim"
 sudo update-alternatives --config editor
+
+echo "Setup tmux plugins"
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
