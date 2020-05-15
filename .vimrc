@@ -17,9 +17,3 @@ set mouse=a
 set pastetoggle=<F2>
 set colorcolumn=80 textwidth=79
 set scrolloff=5
-" persist undo history through vim restarts
-if !isdirectory($HOME . "/.vim/undodir")
-    call mkdir($HOME . "/.vim/undodir", "p")
-endif
-set undofile
-set undodir=~/.vim/undodir
