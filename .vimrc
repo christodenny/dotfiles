@@ -17,3 +17,4 @@ set mouse=a
 set pastetoggle=<F2>
 set colorcolumn=80 textwidth=79
 set scrolloff=5
+set clipboard+=unnamedplus
